@@ -5,7 +5,7 @@ float x, y, z;
 
 void setup() {
   size(800, 800);
-  String portName = "/dev/cu.usbmodem1101";
+  String portName = "/dev/cu.usbmodem2101";
   println(Serial.list());
   myPort = new Serial(this, portName, 9600);
   myPort.bufferUntil('\n');
